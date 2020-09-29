@@ -52,7 +52,7 @@ function rad1()
 end
 
  function LH()
-legit = gg.multiChoice ({'Radar ',' No Recoil/Spread','No Smoke/Flash','X2 FireRate','Aim Assist Boost','FOV','Larger Body Hitbox','Back','Hide Script'},nil,'Legit Hacks')
+legit = gg.multiChoice ({'Radar ',' No Recoil/Spread','No Smoke','X2 FireRate','Aim Assist Boost','FOV','Larger Body Hitbox','Back','Hide Script'},nil,'Legit Hacks')
 if legit[1] == true then rad() end
 if legit[2] == true then Recoil() end
 if legit[3] == true then nsf() end
@@ -68,7 +68,7 @@ end
 
 function EX()
  gg.toast("Extreme hacks aren't safe, Use with Caution")
-extreme = gg.multiChoice({'Rain','Fly','X3.5 FireRate','Giant Body','Shoot ThroughWalls','Larger Head Hitbox','AK47 No Reload','Back'},nil,'Extreme Hacks')
+extreme = gg.multiChoice({'Rain','Fly','X3.5 FireRate','Giant Body','WallBang','Larger Head Hitbox','AK47 No Reload','Back'},nil,'Extreme Hacks')
 if extreme[1] == true then rain() end
 if extreme[2] == true then fly() end
 if extreme[3] == true then firerr() end
@@ -96,6 +96,16 @@ gg.getRanges(gg.REGION_ANONYMOUS)
     gg.clearResults()
     gg.toast('No Rifle Reload Activated')
   end
+  
+  function stw()
+   gg.setRanges(gg.REGION_C_BSS)
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(40)
+    gg.searchAddress("EB0")
+    gg.getResults(1)
+    gg.editAll("-2", gg.TYPE_FLOAT)
+    gg.toast("WallBang activated")
+    end
 
 function lbh()
  gg.setRanges(gg.REGION_CODE_APP)
@@ -163,13 +173,13 @@ gg.toast("Rain Activated")
 end
 
 function sixfor()
-six = gg.multiChoice({'Radar','Aim Assist Boost','FOV','x2 FireRate','Fly','Larger Head Hitbox','Back'},nil,"arm64")
+six = gg.multiChoice({'Radar','Aim Assist Boost','FOV','x2 FireRate','Fly','No Recoil/Spread','Back'},nil,"arm64")
 if six[1] == true then rad1() end
 if six[2] == true then aab() end
 if six[3] == true then FOV() end
 if six[4] == true then firer() end
 if six[5] == true then fly() end
-if six[5] == true then nap() end
+if six[5] == true then Recoil() end
 if six[5] == true then HOME() end
 if six == nil then hide() end
 end
@@ -255,7 +265,7 @@ gg.addListItems({
 })
 gg.editAll("010050E34700001Ar", gg.TYPE_QWORD)
 gg.clearResults()
-gg.toast(" Removed Flash/Smoke ")
+gg.toast(" Removed Smoke ")
 end
 
 function firer()
