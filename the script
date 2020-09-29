@@ -99,8 +99,6 @@ gg.getRanges(gg.REGION_ANONYMOUS)
    gg.setRanges(gg.REGION_C_BSS)
     gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
     gg.getResults(40)
-    gg.searchAddress("EB0")
-    gg.getResults(1)
     gg.editAll("-2", gg.TYPE_FLOAT)
     gg.toast("WallBang activated")
     end
