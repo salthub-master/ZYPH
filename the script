@@ -1,6 +1,4 @@
 gg.toast('Zyph Reborn 1.1 BETA - Made By Chr1s#0103')
-gg.sleep(3000)
-gg.toast('Loaded!')
 gg.alert("If you are using a Low-End device, Zyph may lag C-OPS so after you select your hacks close gg, if you are having FPS Issues")
 gg.alert("Thank you for testing the beta version of 1.1, nothing in here to use is safe and is for the sole purpose of testing.")
 HOMHOMHOME=1
