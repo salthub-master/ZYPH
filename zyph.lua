@@ -360,7 +360,8 @@ gg.toast('Fly Hack Activated')
 gg.setRanges(old)
 end
 gg.addListItems(t)
-	
+end
+
 function gb()
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber("6666663AFr", gg.TYPE_FLOAT, false)
