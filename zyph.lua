@@ -355,7 +355,7 @@ gg.getResults(2000)
 gg.toast("This may take 7-10 seconds, try to not die.")
 gg.sleep(7000)
 gg.refineNumber('1.5')
-fly = gg.getResults(1000)
+fly = gg.getResults(1500)
 fly[200].value = '2.6'
 fly[200].freeze = true
 fly[200].freezType = gg.FREEZE_NORMAL
