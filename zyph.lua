@@ -358,7 +358,7 @@ gg.refineNumber('1.5')
 fly = gg.getResults(1500)
 fly[200].value = '2.6'
 fly[200].freeze = true
-fly[200].freezType = gg.FREEZE_NORMAL
+fly[200].freezeType = gg.FREEZE_NORMAL
 gg.clearResults()
 gg.toast('Fly Hack Activated')
 gg.setRanges(old)
