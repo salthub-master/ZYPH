@@ -354,8 +354,8 @@ gg.searchNumber('1.5', gg.TYPE_FLOAT, false)
 gg.getResults(2000)
 gg.toast("This may take 7-10 seconds, try to not die.")
 gg.sleep(7000)
-gg.refineNumber('1.5', gg.TYPE_FLOAT)
-fly = gg.getResults(200)
+gg.refineNumber('1.5')
+fly = gg.getResults(1000)
 fly[200].value = '2.6'
 fly[200].freeze = true
 fly[200].freezType = gg.FREEZE_NORMAL
@@ -363,6 +363,7 @@ gg.clearResults()
 gg.toast('Fly Hack Activated')
 gg.setRanges(old)
 end
+
 function gb()
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber("6666663AFr", gg.TYPE_FLOAT, false)
