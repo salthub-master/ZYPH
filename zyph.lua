@@ -360,6 +360,7 @@ gg.clearResults()
 gg.toast('Fly Hack Activated, now u can couch')
 gg.setRanges(old)
 end
+end
 
 function gb()
 gg.setRanges(gg.REGION_C_ALLOC)
