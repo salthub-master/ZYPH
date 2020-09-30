@@ -1,5 +1,5 @@
 gg.toast('Zyph Reborn 1.1 - Made By Chr1s#0103')
-gg.sleep("3500")
+gg.sleep(3500)
 gg.toast('Loaded!')
 gg.alert("If you are using a Low-End device, Zyph may lag C-OPS so after you select your hacks close gg, if you are having FPS Issues")
 HOMHOMHOME=1
