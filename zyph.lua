@@ -281,7 +281,7 @@ gg.addListItems({
 })
 gg.editAll("010050E34700001Ar", gg.TYPE_QWORD)
 gg.clearResults()
-gg.toast(" Removed Flash/Smoke ")
+gg.toast(" Removed Smoke ")
 end
 
 function firer()
@@ -353,7 +353,7 @@ gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber('1.5', gg.TYPE_FLOAT, false)
 gg.getResults(2000)
 gg.toast("This may take 7-10 seconds, try to not die.")
-gg.wait(7000)
+gg.sleep(7000)
 gg.searchNumber('1.5', gg.TYPE_FLOAT, false)
 fly = gg.getResults(200)
 fly[200].value = '-2.6'
