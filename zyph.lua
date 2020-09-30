@@ -352,7 +352,6 @@ gg.toast('Dont crouch right now.')
 local old = gg.getRanges();
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber('1.5', gg.TYPE_FLOAT, false)
-gg.getResults(2000)
 fly = gg.getResults(1500)
 fly[200].value = '2.6'
 fly[200].freeze = true
