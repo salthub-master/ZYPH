@@ -1,9 +1,10 @@
-gg.toast('Zyph Reborn 1 - Made By Chr1s#0103')
+gg.toast('Zyph Reborn 1.1 - Made By Chr1s#0103')
+gg.sleep("3500")
 gg.toast('Loaded!')
 gg.alert("If you are using a Low-End device, Zyph may lag C-OPS so after you select your hacks close gg, if you are having FPS Issues")
 HOMHOMHOME=1
 function HOME()
-AB = gg.choice({'32 Bit','Crash Game after Match Ends[32 BIT]','Kill Script'},nil,'Pick your Device Architecture')
+AB = gg.choice({'Main Hacks','Crash Game after Match Ends','Kill Script'},nil,'Made By Chr1s#0103')
 if AB == 1 then threetwo() end
 if AB == 2 then crash() end
 if AB == 3 then os.exit() end
@@ -65,7 +66,7 @@ end
 
 function EX()
  gg.toast("Extreme hacks aren't safe, Use with Caution")
-extreme = gg.multiChoice({'Rain','Fly','X3.5 FireRate','Giant Body','Shoot ThroughWalls','Larger Head Hitbox','Back'},nil,'Extreme Hacks')
+extreme = gg.multiChoice({'Rain','Fly','X3.5 FireRate','Giant Body','Shoot ThroughWalls','Larger Head Hitbox','Modify Views','Back'},nil,'Extreme Hacks')
 if extreme[1] == true then rain() end
 if extreme[2] == true then fly() end
 if extreme[3] == true then firerr() end
@@ -73,13 +74,41 @@ if extreme[4] == true then gb() end
 if extreme[5] == true then stw() end
 if extreme[6] == true then lgh() end
 if extreme[7] == true then Recoil() end
-if extreme[8] == true then threetwo() end
+if extreme[8] == true then MV() end
+if extreme[9] == true then threetwo() end
 if extreme == nil then hide() end
+end
+
+function MV()
+view = gg.choice({'Underground View','High View','Back'},nil 'Pick a view')
+if view == 1 then lw() end
+if view == 2 then hw() end
+if view == 3 then EX() end
+if view == nil then hide() end
+end
+
+function lw()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.clearResults()
+gg.searchNumber("1.49999988379",gg.TYPE_FLOAT)
+gg.getResults(111)
+gg.editAll("-1",gg.TYPE_FLOAT)
+gg.toast("Lowered You View")
+end
+
+function hw()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.clearResults()
+gg.searchNumber("1.49999988379",gg.TYPE_FLOAT)
+gg.getResults(111)
+gg.editAll("4",gg.TYPE_FLOAT)
+gg.toast("Made your view higher, cameraman was on drugs (lil useless in small maps)")
 end
 
 function Recoil()
 gg.setRanges(gg.REGION_CODE_APP)
 gg.searchNumber("00007042r", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(16)
 gg.editAll("00000000r", gg.TYPE_FLOAT)
 gg.toast("Removed Recoil")
 end
@@ -323,7 +352,13 @@ local old = gg.getRanges();
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber('1.5', gg.TYPE_FLOAT, false)
 gg.getResults(2000)
-gg.editAll("2.8", gg.TYPE_FLOAT)
+gg.toast("This may take 7-10 seconds, try to not die.")
+gg.wait(7000)
+gg.searchNumber('1.5', gg.TYPE_FLOAT, false)
+fly = gg.getResults(200)
+fly[200].value = '-2.6'
+fly[200].freeze = true
+fly[200].freezType = gg.FREEZE_NORMAL
 gg.clearResults()
 gg.toast('Fly Hack Activated')
 gg.setRanges(old)
