@@ -356,7 +356,6 @@ t = gg.getResults(1500)
 t[98].value = '2.5'
 t[98].freeze = true
 t[98].freezeType = gg.FREEZE_NORMAL
-gg.clearResults()
 gg.toast('Fly Hack Activated, now u can couch')
 gg.setRanges(old)
 end
