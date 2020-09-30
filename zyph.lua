@@ -355,7 +355,6 @@ gg.searchNumber('1.5', gg.TYPE_FLOAT, false)
 t = gg.getResults(1500)
 t[98].value = '2.8'
 t[98].freeze = true
-t[98].freezeType = gg.FREEZE_NORMAL
 gg.toast('Fly Hack Activated')
 gg.setRanges(old)
 end
