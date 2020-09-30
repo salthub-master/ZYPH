@@ -356,10 +356,10 @@ local t = gg.getResults(1500)
 for i, v in ipairs(t) do
 	t[i].value = '2.5'
 	t[i].freeze = true
+	gg.addListItems(t)
 gg.clearResults()
 gg.toast('Fly Hack Activated, now u can couch')
 gg.setRanges(old)
-end
 end
 
 function gb()
