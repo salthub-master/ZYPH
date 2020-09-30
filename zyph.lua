@@ -352,10 +352,7 @@ gg.toast('Dont crouch right now.')
 local old = gg.getRanges();
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber('1.5', gg.TYPE_FLOAT, false)
-t = gg.getResults(1500)
-t[98].value = '2.8'
-t[98].freeze = true
-gg.toast('Fly Hack Activated')
+gg.alert("Its a pain in the ass to make it freeze so, kill the script and then edit the value to 2.8 and freeze it")
 gg.setRanges(old)
 end
 
