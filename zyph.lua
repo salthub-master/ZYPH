@@ -354,7 +354,7 @@ gg.searchNumber('1.5', gg.TYPE_FLOAT, false)
 gg.getResults(2000)
 gg.toast("This may take 7-10 seconds, try to not die.")
 gg.sleep(7000)
-gg.refine('1.5', gg.TYPE_FLOAT)
+gg.refineNumber('1.5', gg.TYPE_FLOAT)
 fly = gg.getResults(200)
 fly[200].value = '2.6'
 fly[200].freeze = true
