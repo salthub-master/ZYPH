@@ -352,14 +352,12 @@ gg.toast('Dont crouch right now.')
 local old = gg.getRanges();
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber('1.5', gg.TYPE_FLOAT, false)
-local t = gg.getResults(1500)
-for i, v in ipairs(t) do
-	t[i].value = '8'
-	t[i].freeze = true
+t = gg.getResults(1500)
+t[98].value = '2.8'
+t[98].freeze = true
+t[98].freezeType = gg.FREEZE_NORMAL
 gg.toast('Fly Hack Activated')
 gg.setRanges(old)
-end
-gg.addListItems(t)
 end
 
 function gb()
