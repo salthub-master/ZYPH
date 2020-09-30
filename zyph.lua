@@ -80,7 +80,7 @@ if extreme == nil then hide() end
 end
 
 function MV()
-view = gg.choice({'Underground View','High View','Back'},nil 'Pick a view')
+view = gg.choice({'Underground View','High View','Back'},nil,'Pick a view')
 if view == 1 then lw() end
 if view == 2 then hw() end
 if view == 3 then EX() end
