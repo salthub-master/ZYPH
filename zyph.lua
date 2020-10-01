@@ -218,10 +218,8 @@ function aab()
 gg.clearResults()
 gg.setRanges(gg.REGION_CODE_APP)
 gg.searchNumber('1', gg.TYPE_FLOAT, false)
-t = gg.getResults(1000)
-t[98].value = '2.0'
-t[98].freeze = true
-t[98].freezeType = gg.FREEZE_NORMAL
+gg.getResults(1000)
+gg.editAll(2.2, gg.TYPE_FLOAT)
 gg.toast('Aim assist boosted')
 gg.clearResults()
 end
