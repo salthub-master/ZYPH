@@ -1,4 +1,4 @@
-gg.toast('Zyph Reborn 1.1 - Made By Chr1s#0103')
+gg.toast('Zyph Reborn 1.2 Made By Chr1s#0103')
 gg.sleep(3500)
 gg.toast('Loaded!')
 gg.alert("If you are using a Low-End device, Zyph may lag C-OPS so after you select your hacks close gg, if you are having FPS Issues")
@@ -59,14 +59,15 @@ if legit[5] == true then aab() end
 if legit[6] == true then FOV() end
 if legit[7] == true then nap() end
 if legit[8] == true then lbh() end
-if legit[6] == true then threetwo() end
+if legit[9] == true then threetwo() end
+if legit[10] == true then hide() end
 if legit == nil then hide() end
 HOMEDM=-1
 end
 
 function EX()
  gg.toast("Extreme hacks aren't safe, Use with Caution")
-extreme = gg.multiChoice({'Rain','Fly','X3.5 FireRate','Giant Body','Shoot ThroughWalls','Larger Head Hitbox','Modify Views','Back'},nil,'Extreme Hacks')
+extreme = gg.multiChoice({'Rain','Fly','X3.5 FireRate','Giant Body','Shoot ThroughWalls','Larger Head Hitbox','Modify Views','No Recoil','Back'},nil,'Extreme Hacks')
 if extreme[1] == true then rain() end
 if extreme[2] == true then fly() end
 if extreme[3] == true then firerr() end
@@ -75,8 +76,23 @@ if extreme[5] == true then stw() end
 if extreme[6] == true then lgh() end
 if extreme[7] == true then Recoil() end
 if extreme[8] == true then MV() end
-if extreme[9] == true then threetwo() end
+if extreme[9] == true then recoilfull() end
+if extreme[10] == true then threetwo() end
 if extreme == nil then hide() end
+end
+
+function recoilfull()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("0.001",gg.TYPE_FLOAT)
+gg.getResults(6)
+gg.searchAddress("F0")
+g = gg.getResults(1)
+gg.addListItems(g)
+gg.clearResults()
+gg.getListItems(g)
+g[1].value = "0"
+gg.setValues(g)
+gg.toast("Removed Recoil")
 end
 
 function MV()
