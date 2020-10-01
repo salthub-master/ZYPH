@@ -50,7 +50,7 @@ function rad1()
 end
 
  function LH()
-legit = gg.multiChoice ({'Radar ',' No Recoil/Spread','No Smoke/Flash','X2 FireRate','Aim Assist Boost','FOV','Larger Body Hitbox','Back','Hide Script'},nil,'Legit Hacks')
+legit = gg.multiChoice ({'Radar ',' Less Recoil/Spread','No Smoke/Flash','X2 FireRate','Aim Assist Boost','FOV','Larger Body Hitbox','Back','Hide Script'},nil,'Legit Hacks')
 if legit[1] == true then rad() end
 if legit[2] == true then Recoil() end
 if legit[3] == true then nsf() end
