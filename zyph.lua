@@ -50,17 +50,16 @@ function rad1()
 end
 
  function LH()
-legit = gg.multiChoice ({'Radar ',' Less Recoil/Spread','No Smoke/Flash','X2 FireRate','Aim Assist Boost','FOV','Larger Body Hitbox','Back','Hide Script'},nil,'Legit Hacks')
+legit = gg.multiChoice ({'Radar ',' Less Recoil/Spread','No Smoke','X2 FireRate','Aim Assist Boost','FOV','Larger Body Hitbox','Back','Hide Script'},nil,'Legit Hacks')
 if legit[1] == true then rad() end
 if legit[2] == true then Recoil() end
 if legit[3] == true then nsf() end
 if legit[4] == true then firer() end
 if legit[5] == true then aab() end
 if legit[6] == true then FOV() end
-if legit[7] == true then nap() end
-if legit[8] == true then lbh() end
-if legit[9] == true then threetwo() end
-if legit[10] == true then hide() end
+if legit[7] == true then lbh() end
+if legit[8] == true then threetwo() end
+if legit[9] == true then hide() end
 if legit == nil then hide() end
 HOMEDM=-1
 end
