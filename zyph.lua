@@ -1,4 +1,4 @@
-gg.toast('Zyph Reborn 1.2 Made By Chr1s#0103')
+gg.toast('Zyph Reborn 1.2.1 Made By Chr1s#0103')
 gg.sleep(3500)
 gg.toast('Loaded!')
 gg.alert("If you are using a Low-End device, Zyph may lag C-OPS so after you select your hacks close gg, if you are having FPS Issues")
@@ -30,7 +30,7 @@ gg.setRanges(old)
 end
 
 function threetwo()
-three = gg.choice({'Legit Hacks ',' Extreme Hacks ','Back'},nil,'(armeabi-v7a)')
+three = gg.choice({'Legit Hacks ',' Rage Hacks ','Back'},nil,'Pick What type of hacks would you like.')
 if three == 1 then LH() end
 if three == 2 then EX() end
 if three == 3 then HP() end
@@ -50,23 +50,24 @@ function rad1()
 end
 
  function LH()
-legit = gg.multiChoice ({'Radar ',' Less Recoil/Spread','No Smoke','X2 FireRate','Aim Assist Boost','FOV','Larger Body Hitbox','Back','Hide Script'},nil,'Legit Hacks')
+legit = gg.multiChoice ({'Radar ',' Less Recoil/Spread','No Smoke/Flash','X2 FireRate','Aim Assist Boost','FOV','Larger Body Hitbox','Back','Hide Script'},nil,'Legit Hacks')
 if legit[1] == true then rad() end
 if legit[2] == true then Recoil() end
 if legit[3] == true then nsf() end
 if legit[4] == true then firer() end
 if legit[5] == true then aab() end
 if legit[6] == true then FOV() end
-if legit[7] == true then lbh() end
-if legit[8] == true then threetwo() end
-if legit[9] == true then hide() end
+if legit[7] == true then nap() end
+if legit[8] == true then lbh() end
+if legit[9] == true then threetwo() end
+if legit[10] == true then hide() end
 if legit == nil then hide() end
 HOMEDM=-1
 end
 
 function EX()
- gg.toast("Extreme hacks aren't safe, Use with Caution")
-extreme = gg.multiChoice({'Rain','Fly','X3.5 FireRate','Giant Body','Shoot ThroughWalls','Larger Head Hitbox','Modify Views','No Recoil','Back'},nil,'Extreme Hacks')
+ gg.toast("Rage hacks aren't safe, Use with Caution")
+extreme = gg.multiChoice({'Rain','Fly','X3.5 FireRate','Giant Body','Shoot ThroughWalls','Larger Head Hitbox','Modify Views','Back'},nil,'Rage Hacks')
 if extreme[1] == true then rain() end
 if extreme[2] == true then fly() end
 if extreme[3] == true then firerr() end
@@ -75,24 +76,11 @@ if extreme[5] == true then stw() end
 if extreme[6] == true then lgh() end
 if extreme[7] == true then Recoil() end
 if extreme[8] == true then MV() end
-if extreme[9] == true then recoilfull() end
-if extreme[10] == true then threetwo() end
+if extreme[9] == true then threetwo() end
 if extreme == nil then hide() end
 end
 
-function recoilfull()
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber("0.001",gg.TYPE_FLOAT)
-gg.getResults(6)
-gg.searchAddress("F0")
-g = gg.getResults(1)
-gg.addListItems(g)
-gg.clearResults()
-gg.getListItems(g)
-g[1].value = "0"
-gg.setValues(g)
-gg.toast("Removed Recoil")
-end
+function 
 
 function MV()
 view = gg.choice({'Underground View','High View','Back'},nil,'Pick a view')
@@ -125,7 +113,7 @@ gg.setRanges(gg.REGION_CODE_APP)
 gg.searchNumber("00007042r", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(16)
 gg.editAll("00000000r", gg.TYPE_FLOAT)
-gg.toast("Removed Recoil")
+gg.toast("Lowered Recoil")
 end
 
 function rd()
@@ -138,18 +126,7 @@ gg.getRanges(gg.REGION_ANONYMOUS)
   end
 
 function lbh()
- gg.setRanges(gg.REGION_CODE_APP)
-    gg.searchNumber("0700A0E10010A0E3r;010050E33800001Ar;104A08EE144097E5r", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
-    gg.refineNumber("010050E33800001Ar", gg.TYPE_QWORD)
-    gg.getResults(1)
-    gg.editAll("000050E33800001Ar", gg.TYPE_QWORD)
-    gg.clearResults()
-    gg.setRanges(gg.REGION_CODE_APP)
-    gg.searchNumber("00000000r;1EFF2FE1r;F04F2DE9r;1CB08DE2r;068B2DEDr;08708BE2r", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-    gg.refineNumber("00000000r", gg.TYPE_DWORD)
-    gg.getResults(1)
-    gg.editAll("00009840r", gg.TYPE_DWORD)
-    gg.toast("Body Hitbox Increased!")
+gg.alert("Disabled, Will be fixed.")
 end
 
 function lgh()
