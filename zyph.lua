@@ -80,8 +80,6 @@ if extreme[9] == true then threetwo() end
 if extreme == nil then hide() end
 end
 
-function 
-
 function MV()
 view = gg.choice({'Underground View','High View','Back'},nil,'Pick a view')
 if view == 1 then lw() end
