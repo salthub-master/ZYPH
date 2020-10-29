@@ -1,0 +1,15 @@
+[+]Improved the UI
+   -Re-arranged the buttons
+   -Added some edges to all the buttons(except close and minimize)
+   -Tabs have a darker color to match the exploits theme 
+   -Arranged the buttons in settings
+   
+[+]Fixes
+   - Fixed Auto-Attach crashing the script
+   - Fixed : Enabling Auto-execute can sometimes crash Drop
+   - Fixed Drop sometimes crashing on Launch
+   
+[+]New Stuff
+   -New DLL
+   -Reverse the UI
+   -Games Tab
