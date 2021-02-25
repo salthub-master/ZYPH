@@ -1,4 +1,4 @@
-for ,v in pairs(workspace:GetDescendants()) do
+for _,v in pairs(workspace:GetDescendants()) do
 if v.ClassName == "Part"
 or v.ClassName == "SpawnLocation"
 or v.ClassName == "WedgePart"
@@ -8,7 +8,7 @@ v.Material = "Plastic"
 end
 end
 
-for ,v in pairs(workspace:GetDescendants()) do
+for _,v in pairs(workspace:GetDescendants()) do
 if v.ClassName == "Decal"
 or v.ClassName == "Texture" then
 v:Destroy()
